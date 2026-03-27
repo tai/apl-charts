@@ -1,0 +1,5 @@
+apiVersion: v2
+name: phi-4-mini-instruct
+description: App Platform Phi-4 Mini LLM
+version: 1.0.0
+icon: https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.png
