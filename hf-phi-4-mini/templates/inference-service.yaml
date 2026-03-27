@@ -15,8 +15,8 @@ metadata:
     {{- end }}
 spec:
   predictor:
-    nodeSelector:
-      nvidia.com/gpu.product: NVIDIA-RTX-4000-Ada-Generation
+#    nodeSelector:
+#      nvidia.com/gpu.product: NVIDIA-RTX-4000-Ada-Generation
     model:
       modelFormat:
         name: huggingface
