@@ -12,7 +12,6 @@ args:
   - --model_id=microsoft/Phi-4-mini-instruct
   - --model_name=phi-4-mini-instruct
   - --max_model_len=8192
-  - --enable-auto-tool-choice
 
 annotations: {}
 
