@@ -1,0 +1,35 @@
+fullnameOverride: ""
+
+env:
+  - name: HF_TOKEN
+    valueFrom:
+      secretKeyRef:
+        name: hf-secret
+        key: HF_TOKEN
+        optional: false
+
+args:
+  - --model_id=unsloth/Phi-4-mini-instruct-GGUF:Q8_0
+  - --tokenizer microsoft/Phi-4-mini-instruct
+  - --model_name=phi-4-mini-instruct-gguf
+  - --max_model_len=8192
+
+annotations: {}
+
+labels: {}
+
+resources:
+  limits:
+    cpu: "4"
+    memory: 8Gi
+    nvidia.com/gpu: "1"
+  requests:
+    cpu: "2"
+    memory: 6Gi
+    nvidia.com/gpu: "1"
+
+metrics:
+  enabled: false
+  endpoints: []
+    # - port: http-usermetric
+    #   path: /metrics
